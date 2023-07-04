@@ -1,4 +1,4 @@
-version: "2"
+version: "3.8"
 
 services:
   rng:
@@ -19,7 +19,7 @@ services:
     - "./webui/files/:/files/"
 
   redis:
-    image: redis
+    image: redis:7-alpine
 
   worker:
     build: worker
